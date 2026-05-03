@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emmy Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #3a0ca3, #7209b7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      background: #f7f7f7;
+      border-radius: 20px;
+      padding: 30px 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .logo span {
+      color: #7209b7;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #7209b7;
+    }
+
+    .talk-btn {
+      background: #7209b7;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-text {
+      max-width: 550px;
+    }
+
+    .hero-text h1 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero-text h2 span {
+      color: #7209b7;
+      letter-spacing: 2px;
+    }
+
+    .hero-text p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      border: 2px solid #7209b7;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #7209b7;
+      color: white;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #7209b7;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    /* Social icons */
+    .socials {
+      display: flex;
+      gap: 15px;
+    }
+
+    .socials a {
+      width: 35px;
+      height: 35px;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      border-color: #7209b7;
+      color: #7209b7;
+    }
+
+    /* Image */
+    .hero-img img {
+      width: 320px;
+      border-radius: 12px;
+    }
+
+    /* Responsive */
+    @media(max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-img img {
+        width: 250px;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .socials {
+        justify-content: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">EMMY<span>.</span></div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <button class="talk-btn">Let's Talk</button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      
+      <div class="hero-text">
+        <h1>Hi, I'm Emmy Rose!</h1>
+        <h2>WEB <span>DESIGNER</span></h2>
+        <p>
+          Emmy is a passionate and creative web designer known for crafting visually stunning and user-friendly websites. With a keen eye for design and a deep understanding of modern web development, she transforms ideas into beautiful digital experiences.
+        </p>
+
+        <div class="buttons">
+          <button class="btn btn-primary">PROJECTS</button>
+          <button class="btn btn-outline">HIRE ME</button>
+        </div>
+
+        <div class="socials">
+          <a href="#">F</a>
+          <a href="#">T</a>
+          <a href="#">in</a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <!-- Replace with your image -->
+        <img src="https://via.placeholder.com/320x400" alt="Profile">
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
